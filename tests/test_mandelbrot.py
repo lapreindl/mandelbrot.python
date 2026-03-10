@@ -9,6 +9,10 @@ def test_draw_creates_file(tmp_path):
     assert os.path.exists(result)
     # check that the file is non-empty
     assert os.path.getsize(result) > 0
+    # confirm dimensions are correct
+    from PIL import Image
+    img = Image.open(result)
+    assert img.size == (100, 80)
 
 
 def test_cli_invocation(tmp_path, capsys):

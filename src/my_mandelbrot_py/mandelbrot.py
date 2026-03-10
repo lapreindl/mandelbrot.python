@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-
+     
 def draw_mandelbrot(
     output_path: str,
     width: int = 800,

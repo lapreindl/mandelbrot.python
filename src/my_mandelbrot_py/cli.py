@@ -15,11 +15,11 @@ def main():
         help="Output file (PNG).",
     )
     parser.add_argument(
-        "--width", type=int, default=800,
+        "--width", type=int, default=400,
         help="Image width in pixels.",
     )
     parser.add_argument(
-        "--height", type=int, default=600,
+        "--height", type=int, default=300,
         help="Image height in pixels.",
     )
     parser.add_argument(

@@ -26,7 +26,7 @@ def draw_mandelbrot(
         Maximum number of iterations for the escape time algorithm.
     x_center, y_center : float
         Center of the region in the complex plane.
-    scale : float
+    scale : float  
         Width of the region in the complex plane (height is scaled accordingly).
     """
     img = Image.new("RGB", (width, height))
